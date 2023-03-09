@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LEARNING TRIP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- navbar start here  -->
+    <div class="navbar">
+      <div class="logo" id="navl">
+        <img src="logo.png" alt="logo" class="logo1">
+      </div>
+      <div class="nav">
+        <nav>
+          <a href="index.html" class="navbar-a"> <i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+          <a href="about.html" class="navbar-a"> <i class="fa fa-pencil" aria-hidden="true"></i> ABOUT</a>
+          <a href="services.html" class="navbar-a"> <i class="fa fa-file-text" aria-hidden="true"></i> SERVICES</a>
+          <a href="courses.html" class="navbar-a"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> COURSES</a>
+          <a href="gallery.html" class="navbar-a"> <i class="fa fa-area-chart" aria-hidden="true"></i> GALLERY</a>
+          <a href="contact.html" class="navbar-a"> <i class="fa fa-phone" aria-hidden="true"></i> CONTACT </a>
+          <a href="mypayment.html" class="navbar-a"> <i class="fa fa-usd" aria-hidden="true"></i> MY PAYMENT</a>
+          <a href="myprofile.html" class="navbar-a"> <i class="fa fa-user-circle" aria-hidden="true"></i> MY PROFILE</a>
+        </nav>
+      </div>
+    </div>
+    
+    <!-- search box start here -->
+    <div class="search_box">
+      <input type="search" placeholder="Search Any Here..." class="sea_text">
+      <button class="sea_btn"><i class="fa fa-search" aria-hidden="true" ></i></button>
+    </div>
+
+    <img src="mypayment.jpg" alt="mypayment image" class="main_img">
+
+    <div class="con">
+      <i><h2 class="blink"> My Payment </h2></i>
+    </div>
+
+    <div class="payment">
+      <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+            
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3><br>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="KHANDAL VIVEK PRAVINBHAI" class="in_text">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="text" id="email" name="email" placeholder="khandalvivek777@.com" class="in_text">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="text" id="adr" name="address" placeholder="PITRUCHHAYA Bungalows" class="in_text">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="Ahemdabad" class="in_text">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="Gujarat" class="in_text">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="10001" class="in_text">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3><br>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="KHANDAL VIVEK PRAVINBHAI" class="in_text">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" class="in_text">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September" class="in_text">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2018" class="in_text">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352" class="in_text">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+          </div>
+        </div>
+        <div class="col-25">
+          <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">BCA</a> <span class="price">$2000</span></p>
+            <p><a href="#">B.Sc. (CS & IT)</a> <span class="price">$2500</span></p>
+            <p><a href="#">MCA</a> <span class="price">$4000</span></p>
+            <p><a href="#">MSC-IT</a> <span class="price">$5000</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$13500</b></span></p>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+
+
+    <!-- footer start here -->
+    <footer>
+        <div class="footer">
+          <div class="foot">
+            <div class="f1">
+              <img src="logo.png" class="f1_logo" alt="">
+            </div>
+          
+            <div class="f2">
+                <h3 class="tit_main">ADDRESS</h3>
+                <p class="f2_fir" >
+                PITRUCHHAYA Bungalows <br>
+                To:Bagasara <br>
+                Ta.Bagasara,Dt.Amreli <br>
+                State.Gujarat <br>
+                </p>
+                <p class="f2_sec">
+                khandalvivek777@gmail.com <br>
+                </p>
+                <p class="f2_sec"> 
+                +91-6355426844
+                </p><br><br>
+            </div>
+
+            <div class="f3">
+              <h3 class="tit_main">COMPANY</h3>
+              <a href="about.html" class="f3_p">About</a><br><br>
+              <a href="services.html" class="f3_p">Services</a><br><br>
+              <a href="courses.html" class="f3_p">Courses</a><br><br>
+              <a href="contact.html" class="f3_p">Contact</a><br><br>
+            </div>
+
+            <div class="F4">
+                <h3 class="tit_main">USEFUL LINKS</h3>
+                <a href="https://www.w3schools.com/" id="lin">https://www.w3schools.com/</a><br><br>
+                <a href="https://www.javatpoint.com/java-tutorial" id="lin">https://www.javatpoint.com/java-tutorial</a><br><br>
+                <a href="https://www.tutorialspoint.com/index.htm" id="lin">https://www.tutorialspoint.com/index.htm</a>
+            </div>
+
+            <div class="f5">
+                <h3 class="tit_main">FOLLOW US</h3>
+                <a href="https://www.instagram.com/mr_khandal_302/"><i class="fa fa-instagram" id="icn" aria-hidden="true"></i></a> <br><br>
+                <a href="https://twitter.com/mr_khandal_302"><i class="fa fa-twitter" id="icn" aria-hidden="true"></i></a> <br><br>
+                <a href="https://www.facebook.com/profile.php?id=100027489351018"><i class="fa fa-facebook-square" id="icn" aria-hidden="true"></i></a> <br><br>
+            </div>
+            </div>
+            <div class="p"> 
+            <p class="call" style="padding-bottom: 30px; font-size: 14px;  text-align: center;">
+                ©learningtrip.com 2023 <br>
+                <u>web solution by vivek khandal</u>
+            </p> 
+        </div>
+    </footer>
+  
+</body>
+</html>

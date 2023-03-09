@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LEARNING TRIP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- navbar start here  -->
+    <div class="navbar">
+      <div class="logo" id="navl">
+        <img src="logo.png" alt="logo" class="logo1">
+      </div>
+      <div class="nav">
+        <nav>
+          <a href="index.html" class="navbar-a"> <i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+          <a href="about.html" class="navbar-a"> <i class="fa fa-pencil" aria-hidden="true"></i> ABOUT</a>
+          <a href="services.html" class="navbar-a"> <i class="fa fa-file-text" aria-hidden="true"></i> SERVICES</a>
+          <a href="courses.html" class="navbar-a"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> COURSES</a>
+          <a href="gallery.html" class="navbar-a"> <i class="fa fa-area-chart" aria-hidden="true"></i> GALLERY</a>
+          <a href="contact.html" class="navbar-a"> <i class="fa fa-phone" aria-hidden="true"></i> CONTACT </a>
+          <a href="mypayment.html" class="navbar-a"> <i class="fa fa-usd" aria-hidden="true"></i> MY PAYMENT</a>
+          <a href="myprofile.html" class="navbar-a"> <i class="fa fa-user-circle" aria-hidden="true"></i> MY PROFILE</a>
+        </nav>
+      </div>
+    </div>
+    
+    <!-- search box start here -->
+    <div class="search_box">
+      <input type="search" placeholder="Search Any Here..." class="sea_text">
+      <button class="sea_btn"><i class="fa fa-search" aria-hidden="true" ></i></button>
+    </div>
+
+    <div class="myprofile">
+      <div class="mypro_img" >
+        <img src="myprofile.jpg" alt="myprofile image">
+      </div>
+
+      <div class="log_pro">
+        <img src="log.jpg" class="log_img" alt="">
+        <h2 class="log_h2">Login</h2>
+        <br>
+        <fieldset>
+          <br>
+          <form action="">
+
+            <i class="fa fa-user-circle" aria-hidden="true" id="hhh"></i>
+            <input type="email" placeholder="Username Or Email Or Phone"  class="log_input">
+            <br><br>
+
+            <i class="fa fa-key" aria-hidden="true" id="hhh"></i>
+            <input type="password" placeholder="Password" class="log_input">
+            <br><br>
+
+            <input type="checkbox">Remember me 
+            <br><br>
+
+            <a href="index.html" >
+              <input type="button" class="log_btn" value="Login" onclick="myFunction1()">
+            </a> <br><br>
+
+            <script>
+              function myFunction1() {
+                alert("Login Successfully!");
+              }
+            </script>
+
+            <a href=""><button type="button" class="cancel_btn"> Cancel</button></a>
+            <button type="button" class="signup_btn"  id="myBtn"> Sign Up </button>
+            <br><br>
+
+            
+            <span class="psw">Forgot <a href="#">password?</a></span>
+
+
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <center>
+                  <div class="log_pro">
+                    <img src="signup.jpg" class="log_img" alt="">
+                    <br>
+                    <fieldset>
+                      <br>
+                      <form action="">
+            
+                        <i class="fa fa-user-circle" aria-hidden="true" id="hhh"></i>
+                        <input type="text" placeholder="Full Name"  class="log_input">
+                        <br><br>
+
+                        <i class="fa fa-phone" aria-hidden="true" id="hhh"></i>
+                        <input type="text" placeholder="Phone"  class="log_input">
+                        <br><br>
+
+                        <i class="fa fa-envelope" aria-hidden="true" id="hhh"></i>
+                        <input type="email" placeholder="Email"  class="log_input">
+                        <br><br>
+
+                        <i class="fa fa-calendar" aria-hidden="true" id="hhh"></i>
+                        <input type="date" placeholder="Date Of Birth"  class="log_input">
+                        <br><br>
+            
+                        <i class="fa fa-key" aria-hidden="true" id="hhh"></i>
+                        <input type="password" placeholder="Password" class="log_input">
+                        <br><br>
+            
+                        <input type="checkbox">Remember me 
+                        <br><br>
+
+                        <a href="myprofile.html" >
+                          <input type="button" class="log_btn" value="Submit" onclick="myFunction2()">
+                        </a> <br><br>
+
+                        <script>
+                          function myFunction2() {
+                            alert("Your Profile Create!");
+                          }
+                        </script>
+
+                      </form>
+
+                  </div>
+              </center>
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+
+
+
+          </form>
+        </fieldset>
+
+      </div>
+    </div>
+
+    <!-- footer start here -->
+    <footer>
+        <div class="footer">
+          <div class="foot">
+            <div class="f1">
+              <img src="logo.png" class="f1_logo" alt="">
+            </div>
+          
+            <div class="f2">
+                <h3 class="tit_main">ADDRESS</h3>
+                <p class="f2_fir" >
+                PITRUCHHAYA Bungalows <br>
+                To:Bagasara <br>
+                Ta.Bagasara,Dt.Amreli <br>
+                State.Gujarat <br>
+                </p>
+                <p class="f2_sec">
+                khandalvivek777@gmail.com <br>
+                </p>
+                <p class="f2_sec"> 
+                +91-6355426844
+                </p><br><br>
+            </div>
+
+            <div class="f3">
+              <h3 class="tit_main">COMPANY</h3>
+              <a href="about.html" class="f3_p">About</a><br><br>
+              <a href="services.html" class="f3_p">Services</a><br><br>
+              <a href="courses.html" class="f3_p">Courses</a><br><br>
+              <a href="contact.html" class="f3_p">Contact</a><br><br>
+            </div>
+
+            <div class="F4">
+                <h3 class="tit_main">USEFUL LINKS</h3>
+                <a href="https://www.w3schools.com/" id="lin">https://www.w3schools.com/</a><br><br>
+                <a href="https://www.javatpoint.com/java-tutorial" id="lin">https://www.javatpoint.com/java-tutorial</a><br><br>
+                <a href="https://www.tutorialspoint.com/index.htm" id="lin">https://www.tutorialspoint.com/index.htm</a>
+            </div>
+
+            <div class="f5">
+                <h3 class="tit_main">FOLLOW US</h3>
+                <a href="https://www.instagram.com/mr_khandal_302/"><i class="fa fa-instagram" id="icn" aria-hidden="true"></i></a> <br><br>
+                <a href="https://twitter.com/mr_khandal_302"><i class="fa fa-twitter" id="icn" aria-hidden="true"></i></a> <br><br>
+                <a href="https://www.facebook.com/profile.php?id=100027489351018"><i class="fa fa-facebook-square" id="icn" aria-hidden="true"></i></a> <br><br>
+            </div>
+            </div>
+            <div class="p"> 
+            <p class="call" style="padding-bottom: 30px; font-size: 14px;  text-align: center;">
+                ©learningtrip.com 2023 <br>
+                <u>web solution by vivek khandal</u>
+            </p> 
+        </div>
+    </footer>
+  
+</body>
+</html>

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LEARNING TRIP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <!-- navbar start here  -->
+    <div class="navbar">
+      <div class="logo" id="navl">
+        <img src="logo.png" alt="logo" class="logo1">
+      </div>
+      <div class="nav">
+        <nav>
+          <a href="index.html" class="navbar-a"> <i class="fa fa-home" aria-hidden="true"></i> HOME</a>
+          <a href="about.html" class="navbar-a"> <i class="fa fa-pencil" aria-hidden="true"></i> ABOUT</a>
+          <a href="services.html" class="navbar-a"> <i class="fa fa-file-text" aria-hidden="true"></i> SERVICES</a>
+          <a href="courses.html" class="navbar-a"> <i class="fa fa-graduation-cap" aria-hidden="true"></i> COURSES</a>
+          <a href="gallery.html" class="navbar-a"> <i class="fa fa-area-chart" aria-hidden="true"></i> GALLERY</a>
+          <a href="contact.html" class="navbar-a"> <i class="fa fa-phone" aria-hidden="true"></i> CONTACT </a>
+          <a href="mypayment.html" class="navbar-a"> <i class="fa fa-usd" aria-hidden="true"></i> MY PAYMENT</a>
+          <a href="myprofile.html" class="navbar-a"> <i class="fa fa-user-circle" aria-hidden="true"></i> MY PROFILE</a>
+        </nav>
+      </div>
+    </div>
+    
+    <!-- search box start here -->
+    <div class="search_box">
+      <input type="search" placeholder="Search Any Here..." class="sea_text">
+      <button class="sea_btn"><i class="fa fa-search" aria-hidden="true" ></i></button>
+    </div>
+
+    <!-- slideshow start here -->
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="6.jpg" style="width:100%">
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span> 
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+
+    <div class="con" style="margin-top: 10%;">
+      <marquee behavior="scrool" direction="right"><i><h2 class="blink"> About Us </h2></i></marquee>
+    </div>
+
+    <center>
+      <div class="abtcon_text">
+        <h1 class="abtcon_texth2">An Award-Winning Learning Experience</h1><br>
+        <h2>Bca & Mca & Etc.</h2>
+      </div>
+      
+      <div class="abtcon_img">
+        <div class="abtcon_img1"><img src="award1.png" alt="" class="abtcon_img11"></div>
+        <div class="abtcon_img1"><img src="award2.png" alt="" class="abtcon_img11"></div>
+        <div class="abtcon_img1"><img src="award3.png" alt="" class="abtcon_img11"></div>
+        <div class="abtcon_img1"><img src="award4.png" alt="" class="abtcon_img11"></div>
+        <div class="abtcon_img1"><img src="award5.png" alt="" class="abtcon_img11"></div>
+      </div>
+      
+      <div class="abtcon_text2">
+        <div class="abtcon_text21">
+          Over <span class="blink" style="color: blue;font-size: 30px;"> 14 million </span><br>
+          students use learning-trip  
+          <marquee behavior="scrool" direction="right"><b> <hr style="color: blue; width: 10%; text-align: center; border-top: 10px solid blue; border-radius: 5px;"> </b></marquee>
+        </div>
+        <div class="abtcon_text21">
+          Trusted by over <br>
+          <span class="blink" style="color: rgb(18, 108, 122);font-size: 30px;">300,000 parents</span> <marquee behavior="scrool" direction="right"><b> 
+            <hr style="color: rgb(18, 108, 122); width: 10%; text-align: center; border-top: 10px solid rgb(18, 108, 122); border-radius: 5px;"> </b></marquee>
+        </div>
+        <div class="abtcon_text21">
+          <span class="blink" style="color: rgb(202, 127, 21);font-size: 30px;">110 million </span>pluse <br>
+          other peple 
+          <marquee behavior="scrool" direction="right"><b> <hr style="color: rgb(202, 127, 21); width: 10%; text-align: center; border-top: 10px solid rgb(202, 127, 21); border-radius: 5px;"> </b></marquee>
+        </div>
+      </div>
+      
+      <a href="courses.html">
+        <button class="get_btn">Get Start Button</button>
+      </a>
+    </center>
+
+    <div class="about1">
+      <div class="abouth3">
+        <h3>
+          Research shows that on average, students retain <br><br>
+          between 25-60% more through online learning from <br><br>
+          learning-trip than they do in traditional classroom <br><br>
+          settings.
+          
+        </h3> 
+      </div>
+      <img src="abt1.jpg" width="40%"  alt=""> 
+    </div>
+
+    <div class="about2">
+      <div class="abouth2">
+      <h2>
+        <br>
+        Types Of  Learning
+      </h2>
+      <br>
+      <h4>
+        Visual – learners who learn more effectively when information is produced graphically. <br><br>
+        Auditory – learners who prefer listening to information.<br><br>
+        Reading & Writing – those who focus better on the written word<br><br>
+        Kinesthetic – learners who like to be hands on or engage all their senses<br><br>
+      </h4>
+    </div>
+      <img src="abt2.jpg" width="40%" alt="">
+    </div>
+
+  
+    <div class="con" style="margin-top: 10%;">
+      <marquee behavior="scrool" direction="left"><i><h2 class="blink"> Services </h2></i></marquee>
+    </div>
+
+
+    
+    <div class="se1">
+      <div class="se11">
+      <h1>
+        RELEVANT AND AUTHENTIC
+      </h1>
+      </div>
+      <div class="se12">
+      <h4>
+        Learning Content is customized to the fit your organisation’s culture and context <br><br>
+        Scenarios, simulations, case studies and relatable stories are incorporated so that the learners can connect their experience with real world examples <br><br>
+        Courses are crafted precisely adhering to your brand and style guidelines
+      </h4>
+      </div>
+      </div>
+      <div class="se1">
+      
+      <div class="se12">
+      <h4>
+        Our courses are developed based on adult learning principles <br><br>
+        Learning Content is chunked and organised to minimise cognitive overload, increasing learner’s understanding and retention <br><br>
+        Courses are learner-centered and visually rich to attract the learners into the training material providing a personalised learning experience
+      </h4>
+      
+      </div>
+      <div class="se111">
+        <h1>
+          MEANINGFUL AND MOTIVATIONAL
+        </h1>
+        </div>
+      </div>
+      <div class="se1">
+      <div class="sel11">
+      <h1>MEMORABLE AND MEASURABLE</h1>
+      </div>
+      <div class="se12">
+      
+      <h4>
+        Interactive and dynamic nature of our elearning courses bring a true digital learning experience creating a lasting impression <br><br>
+        Our elearning courses are SCORM and AICC compliant to help you track the learner’s progress via the Learning Management Systems (LMs)
+      </h4>
+      </div>
+    </div>
+    <div class="se1">
+   
+    <div class="se12">
+    <h4>
+      Learners are stimulated to explore and learn <br><br>
+      Our gamified approach creates a fun environment with realistic challenges throughout the course <br><br>
+      Multi-device approach – As we use HTML5 tools for custom eLearning content development, training is easily accessible across a host of devices, from PCs to iPads <br><br>
+      Assessment activities are designed to test the knowledge and decision making skills of the learners <br><br>
+      Learners are acknowledged through rewards with personalised feedback
+     </h4>
+    
+    </div>
+    <div class="se111">
+      <h1>
+        INTERACTIVE LEARNING ENVIRONMENT
+      </h1>
+      </div>
+    </div>  
+
+
+    <div class="con" style="margin-top: 10%;">
+      <marquee behavior="scrool" direction="right"><i><h2 class="blink"> Courses </h2></i></marquee>
+    </div>
+
+    <center>
+      <div class="abtcon_text">
+        <h1 class="abtcon_texth2">Become a member</h1><br>
+        <h2>Get started with one of these popular courses today!</h2>
+      </div>
+   
+      <fieldset class="fils_cont">
+      <div class="couban">
+        <h1 class="coubar_tit"> <b> BCA </b></h1>
+          <div class="couban_tab">
+          <table class="tab1">
+              <caption class="cou_deai">BCA Course Details</caption>
+              <tr>
+                <td class="td1" id="td1">BCA</td>
+                <td class="td2" id="td2">Bachelor of Computer Applications</td>
+              </tr>
+              <tr>
+                <td class="td1">BCA Duration</td>
+                <td class="td2">3 years</td>
+              </tr>
+              <tr>
+                <td class="td1">BCA Subjects</td>
+                <td class="td2">Data Structures <br>
+                   Operating Systems <br>
+                   Database Management <br>
+                   User Interface Design and etc.</td>
+              </tr>
+              <tr>
+                <td class="td1" id="td3">BCA Course Fees</td>
+                <td class="td2" id="td4">$2000</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+      <a href="mypayment.html">
+        <button class="buy_btn">Buy Now ($2000)</button>
+      </a>
+    </fieldset>
+
+
+    <fieldset class="fils_cont">
+      <div class="couban">
+        <h1 class="coubar_tit"> <b> B.Sc. (CS & IT) </b></h1>
+          <div class="couban_tab">
+          <table class="tab2">
+              <caption class="cou_deai">B.Sc. (CS & IT) Course Details</caption>
+              <tr>
+                <td class="td1" id="td1"> B.Sc. (CS & IT) </td>
+                <td class="td2" id="td2">Bachelor of Science in (CS & IT)</td>
+              </tr>
+              <tr>
+                <td class="td1">B.Sc. (CS & IT) Duration</td>
+                <td class="td2">3 years</td>
+              </tr>
+              <tr>
+                <td class="td1">B.Sc. (CS & IT) Subjects</td>
+                <td class="td2">E-Commerce Technology <br>
+                  Basics of Web Designing <br>
+                  Cyber Security <br>
+                  Advanced Java and etc.</td>
+              </tr>
+              <tr>
+                <td class="td1" id="td3">B.Sc. (CS & IT) Course Fees</td>
+                <td class="td2" id="td4">$2500</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+      <a href="mypayment.html">
+        <button class="buy_btn">Buy Now ($2500)</button>
+      </a>
+    </fieldset>
+    
+
+
+    <fieldset class="fils_cont">
+      <div class="couban">
+        <h1 class="coubar_tit"> <b> MCA </b></h1>
+          <div class="couban_tab">
+          <table class="tab3">
+              <caption class="cou_deai">MCA Course Details</caption>
+              <tr>
+                <td class="td1" id="td1">MCA</td>
+                <td class="td2" id="td2">Master of Computer Applications</td>
+              </tr>
+              <tr>
+                <td class="td1">MCA Duration</td>
+                <td class="td2">2 years</td>
+              </tr>
+              <tr>
+                <td class="td1">MCA Subjects</td>
+                <td class="td2">Database Management Systems <br>
+                  Web Technology <br>
+                  Statistical Computing <br>
+                  Programming Fundamentals and etc.</td>
+              </tr>
+              <tr>
+                <td class="td1" id="td3">MCA Course Fees</td>
+                <td class="td2" id="td4">$4000</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+      <a href="mypayment.html">
+        <button class="buy_btn">Buy Now ($4000)</button>
+      </a>
+    </fieldset>
+
+
+    <fieldset class="fils_cont">
+      <div class="couban">
+        <h1 class="coubar_tit"> <b> MSC-IT </b></h1>
+          <div class="couban_tab">
+          <table class="tab4">
+              <caption class="cou_deai">MSC-IT Course Details</caption>
+              <tr>
+                <td class="td1" id="td1">MSC-IT</td>
+                <td class="td2" id="td2">Master of Science in Information Technology</td>
+              </tr>
+              <tr>
+                <td class="td1">MSC-IT Duration</td>
+                <td class="td2">2 years</td>
+              </tr>
+              <tr>
+                <td class="td1">MSC-IT Subjects</td>
+                <td class="td2">IT Network Security<br>
+                  Security Monitoring<br>
+                  Mobile Application Security <br>
+                  Fundamentals of Cyber Security and etc.</td>
+              </tr>
+              <tr>
+                <td class="td1" id="td3">MSC-IT Course Fees</td>
+                <td class="td2" id="td4">$5000</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+      <a href="mypayment.html">
+        <button class="buy_btn">Buy Now ($5000)</button>
+      </a>
+    </fieldset>
+
+    </center>
+
+
+    <div class="con" style="margin-top: 10%;">
+      <marquee behavior="scrool" direction="left"><i><h2 class="blink"> Contact Us </h2></i></marquee>
+    </div>
+
+
+    <div class="con_ban">
+      <div class="con_ban1"><br>
+          <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 30px;"> Address </i> <br><br>
+          <h3>PITRUCHHAYA Bungalows <br>
+              To:Bagasara <br>
+              Ta.Bagasara,Dt.Amreli <br>
+              State.Gujarat <br></h3>
+      </div>
+
+      <div class="con_ban1"><br>
+          <i class="fa fa-envelope" aria-hidden="true" style="font-size: 30px;"> Email </i> <br><br>
+          <h3> khandalvivek777@gmail.com </h3> 
+      </div>
+
+      <div class="con_ban1"> <br>
+          <i class="fa fa-mobile" aria-hidden="true" style="font-size: 30px;"> Phone </i> <br><br>
+          <h3>+91-6355426844 <br>
+          +91-79-66688800</h3> 
+      </div>
+
+      <div class="con_ban1"><br>
+          <i class="fa fa-search" aria-hidden="true" style="font-size: 30px;"> Website </i> <br><br>
+          <h3> www.learningtrip.ac.in </h3>
+      </div> 
+    </div>
+
+    <div class="contact">
+      <div class="contact_img" >
+        <img src="con_1.jpg" alt="contact image" class="contact_img1">
+      </div>
+
+      <div class="contact_msg">
+        <fieldset class="fils_msg">
+          <br><br><br>
+          <input type="text" placeholder="Enter Your Name" class="in_msg"><br><br>
+          <input type="text" placeholder="Enter Your Email" class="in_msg"><br><br>
+          <textarea class="in_textmsg" placeholder="Type Here Your Message...">  </textarea><br><br>
+          <button class="thanks_btn" onclick="myFunction3()">Thanks!</button>   
+          
+          <script>
+            function myFunction3() {
+              alert("Your Message send..!");
+            }
+          </script>
+      </fieldset>
+      </div>
+    </div>
+
+    <!-- footer start here -->
+    <footer>
+      <div class="footer">
+        <div class="foot">
+          <div class="f1">
+            <img src="logo.png" class="f1_logo" alt="">
+          </div>
+        
+          <div class="f2">
+            <h3 class="tit_main">ADDRESS</h3>
+            <p class="f2_fir" >
+              PITRUCHHAYA Bungalows <br>
+              To:Bagasara <br>
+              Ta.Bagasara,Dt.Amreli <br>
+              State.Gujarat <br>
+            </p>
+            <p class="f2_sec">
+              khandalvivek777@gmail.com <br>
+            </p>
+            <p class="f2_sec"> 
+              +91-6355426844
+            </p><br><br>
+          </div>
+
+          <div class="f3">
+            <h3 class="tit_main">COMPANY</h3>
+            <a href="about.html" class="f3_p">About</a><br><br>
+            <a href="services.html" class="f3_p">Services</a><br><br>
+            <a href="courses.html" class="f3_p">Courses</a><br><br>
+            <a href="contact.html" class="f3_p">Contact</a><br><br>
+          </div>
+
+          <div class="F4">
+            <h3 class="tit_main">USEFUL LINKS</h3>
+            <a href="https://www.w3schools.com/" id="lin">https://www.w3schools.com/</a><br><br>
+            <a href="https://www.javatpoint.com/java-tutorial" id="lin">https://www.javatpoint.com/java-tutorial</a><br><br>
+            <a href="https://www.tutorialspoint.com/index.htm" id="lin">https://www.tutorialspoint.com/index.htm</a>
+          </div>
+
+          <div class="f5">
+            <h3 class="tit_main">FOLLOW US</h3>
+            <a href="https://www.instagram.com/mr_khandal_302/"><i class="fa fa-instagram" id="icn" aria-hidden="true"></i></a> <br><br>
+            <a href="https://twitter.com/mr_khandal_302"><i class="fa fa-twitter" id="icn" aria-hidden="true"></i></a> <br><br>
+            <a href="https://www.facebook.com/profile.php?id=100027489351018"><i class="fa fa-facebook-square" id="icn" aria-hidden="true"></i></a> <br><br>
+          </div>
+        </div>
+        <div class="p"> 
+          <p class="call" style="padding-bottom: 30px; font-size: 14px;  text-align: center;">
+            ©learningtrip.com 2023 <br>
+            <u>web solution by vivek khandal</u>
+          </p> 
+      </div>
+    </footer>
+
+</body>
+</html>
